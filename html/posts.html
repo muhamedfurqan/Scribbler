@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Posts page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Montez&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&display=swap" rel="stylesheet">    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
+    <link href="../styles/bootstrap-4.3.1-dist/css/bootstrap.css" rel="stylesheet">
+    <link href="../styles/common.css" rel="stylesheet">
+    <link href="../styles/posts.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div id="title">
+          <span id="main_title">ScriBBler</span>
+          <span id="secondary_title">Explore,Imagine,Create</span>
+        </div>
+        <div id="header_buttons">
+          <button id="signUp" class="btn btn-primary header_button" >Sign up</button>
+          <button id="signIn" class="btn btn-primary header_buttons" >Sign in</button>
+        </div>
+            </header>
+
+            <!-- The Signup Modal -->
+<div id="myModal" class="modal">
+
+    <!-- Signup Modal content -->
+    <div class="modal-content">
+      
+    <p>Get Started<span class="close">&times;</span></p>  
+    <hr style="width:100%;text-align:left;margin-left:0">
+    
+        <form action="#"class="form-content" method="POST">
+            <label >Name
+                <input type="text" placeholder="Enter your Name" required></label>
+            
+            <label>Username
+                <input type="text" placeholder="Enter your Username" required>
+            </label>
+            
+            <label for="password">Password
+                <input type="password" placeholder="Enter your password" required>
+            </label>
+            <label for="confirmPassword">Confirm Password
+                <input type="password" placeholder="Re-enter your password" required>
+            </label>
+            <button class="btn btn-success signUp_button">Signup</button>
+        </form>
+       
+   
+     
+    </div>
+  
+  </div>
+
+
+  <!-- The Signin Modal -->
+<div id="signInModal" class="modal">
+
+    <!-- Signin Modal content -->
+    <div class="modal-content">
+      
+    <p>Welcome Back<span class="close">&times;</span></p>  
+    <hr>
+    
+        <form action="#"class="form-content" method="POST">
+            <label >Name
+                <input type="text" placeholder="Enter your Name" required></label>
+            
+            <label for="password">Password
+                <input type="password" placeholder="Enter your password" required>
+            </label>
+            
+            <button class="btn btn-success signUp_button">Signin</button>
+         
+            <span id="not_member">Not a member? <a href="#">SignUp</a></span>
+        </form>
+       
+  
+      </div>
+  
+  </div>
+
+
+
+
+
+  <div class="pagecontent">
+
+
+<h3 id="postHeader">Everything you should know about the 'module' and 'require' in node.js</h3>
+
+
+<div id="heading">
+<p id="pagetitle">Muhammad Furqan</p>
+<button class="btn btn-danger"> Edit<i class="fas fa-edit"></i></button>
+</div>
+<hr>
+
+<p id="content">
+The module circle.js has exported the functions area() and circumference(). Functions and objects are added to the root of a module by specifying additional properties on the special exports object.
+Variables local to the module will be private, because the module is wrapped in a function by Node.js (see module wrapper). In this example, the variable PI is private to circle.js.
+The module.exports property can be assigned a new value (such as a function or object).
+When a file is run directly from Node.js, require.main is set to its module. That means that it is possible to determine whether a file has been run directly by testing require.main === module.
+For a file foo.js, this will be true if run via node foo.js, but false if run by require('./foo').
+Because module provides a filename property (normally equivalent to __filename), the entry point of the current application can be obtained by checking require.main.filename.
+
+</p>
+
+<button class="btn btn-danger" id="likebutton">Like <i class="fas fa-thumbs-up"></i></button>
+
+  </div>
+
+
+    <script src="../scripts/common.js" type = "text/javascript"></script>
+</body>
+
+</html>

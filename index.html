@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Home page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Montez&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link href="./styles/bootstrap-4.3.1-dist/css/bootstrap.css" rel="stylesheet">
+    <link href="styles/common.css" rel="stylesheet">
+    <link href="styles/index.css" rel="stylesheet">
+</head>
+
+<body>
+    
+    <header>
+<div id="title">
+  <span id="main_title">ScriBBler</span>
+  <span id="secondary_title">Explore,Imagine,Create</span>
+</div>
+<div id="header_buttons">
+  <button id="signUp" class="btn btn-primary header_button" >Sign up</button>
+  <button id="signIn" class="btn btn-primary header_buttons" >Sign in</button>
+</div>
+    </header>
+
+<div id="main_content">
+
+    <button class="btn btn-primary formButton">All Posts</button>
+    <button class="btn btn-primary formButton">Create Posts</button>
+</div>
+
+<!-- The Signup Modal -->
+<div id="myModal" class="modal">
+
+    <!-- Signup Modal content -->
+    <div class="modal-content">
+      
+    <p>Get Started<span class="close">&times;</span></p>  
+    <hr style="width:100%;text-align:left;margin-left:0">
+    
+        <form action="#"class="form-content" method="POST">
+            <label >Name
+                <input type="text" placeholder="Enter your Name" required></label>
+            
+            <label>Username
+                <input type="text" placeholder="Enter your Username" required>
+            </label>
+            
+            <label for="password">Password
+                <input type="password" placeholder="Enter your password" required>
+            </label>
+            <label for="confirmPassword">Confirm Password
+                <input type="password" placeholder="Re-enter your password" required>
+            </label>
+            <button class="btn btn-success signUp_button">Signup</button>
+        </form>
+       
+   
+     
+    </div>
+  
+  </div>
+
+
+  <!-- The Signin Modal -->
+<div id="signInModal" class="modal">
+
+    <!-- Signin Modal content -->
+    <div class="modal-content">
+      
+    <p>Welcome Back<span class="close">&times;</span></p>  
+    <hr>
+    
+        <form action="#"class="form-content" method="POST">
+            <label >Name
+                <input type="text" placeholder="Enter your Name" required></label>
+            
+            <label for="password">Password
+                <input type="password" placeholder="Enter your password" required>
+            </label>
+            
+            <button class="btn btn-success signUp_button">Signin</button>
+         
+            <span id="not_member">Not a member? <a href="#">SignUp</a></span>
+        </form>
+       
+  
+      </div>
+  
+  </div>
+
+
+
+  <div class="modal">
+
+    <div id="createPostModal", class="modal-content">
+        <h4>Pen your post <span class="close">&times;</span></h4>
+        <hr>
+    <label>Title<input type="text" placeholder="Enter title of your post"></label>
+    <label>Contents <textarea placeholder="Enter content of your post"></textarea></label>
+    
+    <div id="crPbtn"><button class="btn btn-success">Create</button></div>
+    
+        
+    </div>
+       </div>
+
+
+
+<script src="./scripts/common.js"></script>
+<script src="./scripts/index.js"></script>
+
+</body>
+
+</html>

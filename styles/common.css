@@ -1,0 +1,114 @@
+header{
+
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+padding: 7px 5px;
+}
+
+#title{
+    display: flex;
+    flex-direction: column;
+}
+#main_title{
+
+ font-family: 'Montez', cursive; color:blue;
+ font-weight: bolder;
+
+}
+#secondary_title{
+
+    font-family: 'Ubuntu Mono';
+    font-size: x-small;
+    font-weight: bold;
+    
+
+}
+.btn-primary{
+
+    font-size: 10px;
+}
+
+  /* The Modal (background) */
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed;/* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 20%; /* Could be more or less, depending on screen size */
+    
+  }
+  
+  /* The Close Button */
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+
+
+.form-content{
+
+  margin-top: 10px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  width: 100%;
+}
+
+  p{
+    margin-top: 5px;
+    margin-bottom: 1px;
+    text-align: left;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+
+  }
+
+.formButton{
+
+  padding: 5px 35px;
+  margin: 0px 10px;
+  text-align: center;
+  background:linear-gradient(rgba(255, 166, 0, 0.616),orange);
+  border-color: orange;
+  font-weight:500
+}
+
+.signUp_button{
+margin-top: 15px;
+margin-bottom: 10px;
+}
+
+#not_member{
+  display: block;
+  text-align: center;
+}
+
+
+  input{
+    width: 100%;
+  }

@@ -1,0 +1,170 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+
+    height: 100vh;
+    z-index: -1;
+    font-family: Arial, Helvetica, sans-serif;
+   background: linear-gradient(#ffeedd,#a37547b6);
+  }
+  
+  /* Float four columns side by side */
+  .column {
+    
+    width: 25%;
+    padding: 0 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 50%;
+    overflow: hidden;
+    
+   
+  }
+  
+  /* Remove extra left and right margins, due to padding in columns */
+  .row {margin: 0 5px;
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: center;
+height: 500px;
+}
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Style the counter cards */
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+    padding: 16px;
+    border-radius: 10px;
+    
+    background-color: #f1f1f1;
+    height: 50%;
+  }
+  .card:hover{
+
+    box-shadow: 0 4px 8px 0 rgba(93, 37, 150, 0.5);
+  }
+ p{
+     margin-top: 0px;
+     font-size: 10px;
+     text-align: left;
+     overflow: hidden;
+ }
+ .ellipseIcon{
+
+    display: inline;
+    padding: 2px 2px;
+    width: 2px;
+    color: #000;
+    clear:both;
+    float:right;
+    font-weight: 100px;
+    cursor: pointer;
+ }
+ .head{
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     background-color: rgb(255, 255, 255);
+     font-family: 'Ubuntu Mono';
+     margin-top: 0px;
+     font-weight: bold;
+     text-align: center;
+ }
+.elipse{
+
+float: right;
+
+padding-right: 10px;
+
+}
+ .content{
+
+    -webkit-line-clamp: 3;
+    position: relative;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    font-size: 10px;
+    font-weight: 400;
+    padding-top: 5px;
+ }
+ .heading{
+
+    color:grey
+ }
+ .topic{
+     text-align: left;
+     justify-items: left;
+ }
+ .trash{
+float: right;
+width: 10px;
+height: 10px;
+
+ }
+
+ .trash:hover{
+    box-shadow: 0 4px 8px 0 rgba(52, 13, 90, 0.5);
+    display: grid;
+    cursor:pointer;
+    
+}
+
+
+
+
+/* modal css*/
+.deletemodal {
+    display: none; /* Hidden by default */
+    position: fixed;/* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content/Box */
+  .modalcontent {
+    background:linear-gradient(rgba(91, 146, 91, 0.664),rgba(168, 206, 187, 0.644));
+    border-radius: 20px;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 60px;
+    border: 1px solid #888;
+    width: 40%; /* Could be more or less, depending on screen size */
+    
+    
+  }
+
+  .deletebuttons{
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+  }
+
+
+  
+  /* Responsive columns - one column layout (vertical) on small screens */
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+    }
+  }

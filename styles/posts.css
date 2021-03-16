@@ -1,0 +1,87 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+
+height: 100vh;
+z-index: -1;
+font-family: Arial, Helvetica, sans-serif;
+background: linear-gradient(#d6f5e6d2,#d8f1deb6);
+margin: 0px auto;
+  }
+
+  hr{display: block; width: 100%;margin-top: 0px;}
+  
+  .pagecontent{
+
+display: flex;
+flex-direction: column;
+width: 100%;
+padding: 5px 10px;
+
+  }
+
+  #postHeader{
+
+    text-align: center;
+    font-weight: bolder;
+    text-align: center;
+    font-size: 18px;
+    font-family: 'Noto Sans JP', sans-serif;
+
+  }
+
+  #heading{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0px;
+    border-radius: 10px;
+    
+
+  }
+  #pagetitle{
+      font-size: 17px;
+      font-family:cursive;
+      width: 80%;
+  }
+
+  #content{
+
+margin-top: 10px;
+text-align: justify;
+text-justify: inter-word;
+font-weight: lighter;
+font-family: 'Noto Sans JP', sans-serif;  
+padding: 0px 5px;
+
+}
+  
+#editbutton{
+      float: right;
+      background-color: rgba(212, 37, 37, 0.562);
+      display: inline;
+      height: 20px;
+      width:60px;
+      font-size: 15px;
+      text-align: center;
+      border-radius: 5px;
+  }
+
+  .btn{
+
+    line-height: 5px;
+  }
+
+  #likebutton{
+
+width: 7%;    
+margin-top: 10px;
+display: inline;
+padding: 10px 10px;
+float: left;
+background-color: rgba(233, 19, 19, 0.74);
+}
